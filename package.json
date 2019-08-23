@@ -1,6 +1,6 @@
 {
     "name": "@aapokiiso/hsl-congestion-graphql-gateway",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Bottlenecked gateway lib to the HSL GraphQL API",
     "main": "index.js",
     "scripts": {
