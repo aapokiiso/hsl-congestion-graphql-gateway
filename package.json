@@ -1,22 +1,31 @@
 {
-  "name": "@aapokiiso/hsl-congestion-graphql-gateway",
-  "version": "1.0.2",
-  "description": "Bottlenecked gateway lib to the HSL GraphQL API",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aapokiiso/hsl-congestion-graphql-gateway.git"
-  },
-  "author": "Aapo Kiiso <aapo@kii.so>",
-  "license": "CC0",
-  "bugs": {
-    "url": "https://github.com/aapokiiso/hsl-congestion-graphql-gateway/issues"
-  },
-  "homepage": "https://github.com/aapokiiso/hsl-congestion-graphql-gateway#readme",
-  "dependencies": {
-    "bottleneck": "^2.19.4",
-    "node-cache": "^4.2.1",
-    "request": "^2.88.0",
-    "request-promise-native": "^1.0.7"
-  }
+    "name": "@aapokiiso/hsl-congestion-graphql-gateway",
+    "version": "1.0.2",
+    "description": "Bottlenecked gateway lib to the HSL GraphQL API",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aapokiiso/hsl-congestion-graphql-gateway.git"
+    },
+    "author": "Aapo Kiiso <aapo@kii.so>",
+    "license": "CC0-1.0",
+    "bugs": {
+        "url": "https://github.com/aapokiiso/hsl-congestion-graphql-gateway/issues"
+    },
+    "homepage": "https://github.com/aapokiiso/hsl-congestion-graphql-gateway#readme",
+    "dependencies": {
+        "bottleneck": "^2.19.4",
+        "node-cache": "^4.2.1",
+        "request": "^2.88.0",
+        "request-promise-native": "^1.0.7"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "@lamiaoy/eslint-config": "^2.0.1",
+        "eslint": "^6.2.1"
+    }
 }

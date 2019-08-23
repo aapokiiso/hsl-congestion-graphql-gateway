@@ -31,12 +31,12 @@ module.exports = function initHSLGraphQL() {
          * @param {number} [options.priority] - between 0 (high) and 9 (low). Defaults to 5.
          * @returns {Promise<object>}
          */
-        async query(query, {cacheLifetime, priority} = {}) {
+        async query(query, { cacheLifetime, priority } = {}) {
             let responsePromise = queryCache.get(query);
 
             if (!responsePromise) {
                 responsePromise = limiter.schedule(
-                    {priority},
+                    { priority },
                     () => request.post(
                         'https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql',
                         {
@@ -54,7 +54,7 @@ module.exports = function initHSLGraphQL() {
                 queryCache.set(query, responsePromise, cacheLifetime);
             }
 
-            const {data: result} = await responsePromise;
+            const { data: result } = await responsePromise;
 
             return result;
         },
