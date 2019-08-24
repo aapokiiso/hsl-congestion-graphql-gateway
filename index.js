@@ -16,7 +16,7 @@ const queryCache = new NodeCache({
     useClones: false, // Caching query responses as promises
 });
 
-return {
+module.exports = {
     requestPriority: {
         high: 0,
         default: 5,
